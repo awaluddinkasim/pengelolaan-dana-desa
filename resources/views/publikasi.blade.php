@@ -1,27 +1,22 @@
 <x-lp-layout>
-
-
-
-    <div class="bg-indigo-200">
+    <div class="bg-gradient-to-b from-indigo-200">
 
         <div class="mx-auto max-w-2xl py-24 sm:py-36 lg:py-42 ">
             <div class="text-center">
                 <h1 class="text-5xl font-semibold tracking-tight text-balance text-gray-900 sm:text-7xl">
                     Publikasi Desa
                 </h1>
-                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">Dokumen resmi dan informasi
-                    keuangan desa yang dipublikasikan untuk transparansi publik
-
+                <p class="mt-8 text-lg font-medium text-pretty text-gray-500 sm:text-xl/8">
+                    Dokumen resmi dan informasi keuangan desa yang dipublikasikan untuk transparansi publik
                 </p>
             </div>
 
         </div>
     </div>
     <div class="px-7 md:px-32 lg:px-56 xl:px-72 my-16">
-
         <h3 class="text-xl font-semibold text-gray-800 mb-4">Daftar Publikasi</h3>
 
-        @foreach ($daftarPublikasi as $publikasi)
+        @forelse ($daftarPublikasi as $publikasi)
             <div class="bg-white overflow-hidden shadow rounded-lg border border-gray-200 mb-4">
                 <div class="p-5">
                     <div class="flex items-center">
@@ -70,6 +65,10 @@
                     </div>
                 </div>
             </div>
-        @endforeach
+        @empty
+            <x-ui.card>
+                <p class="text-center text-gray-500 py-15">Belum ada data yang dipublikasi</p>
+            </x-ui.card>
+        @endforelse
     </div>
 </x-lp-layout>
