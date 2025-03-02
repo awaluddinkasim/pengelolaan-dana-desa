@@ -1,7 +1,7 @@
 <x-lp-layout>
     <div class="relative isolate">
 
-        <div class="bg-indigo-200">
+        <div class="bg-gradient-to-b from-indigo-200">
 
             <div class="mx-auto max-w-2xl py-24 sm:py-36 lg:py-42 ">
                 <div class="text-center">
