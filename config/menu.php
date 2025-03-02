@@ -5,7 +5,8 @@ return [
     'active' => 'dashboard',
     'label' => 'Dashboard',
     'icon' => 'layout-dashboard',
-    'route-name' => 'dashboard'
+    'route-name' => 'dashboard',
+    'admin-only' => false,
   ],
   [
     'active' => 'keuangan',
@@ -28,17 +29,20 @@ return [
         'route-name' => 'pengeluaran.index'
       ]
     ],
+    'admin-only' => false,
   ],
   [
     'active' => 'publikasi',
     'label' => 'Publikasi',
     'icon' => 'file-up',
-    'route-name' => 'publikasi.index'
+    'route-name' => 'publikasi.index',
+    'admin-only' => false,
   ],
   [
     'active' => 'pengguna',
     'label' => 'Pengguna',
     'icon' => 'users',
-    'route-name' => 'pengguna.index'
+    'route-name' => 'pengguna.index',
+    'admin-only' => true,
   ]
 ];
