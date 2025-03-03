@@ -14,7 +14,7 @@
         <div class="bg-white rounded-lg shadow-xl w-full max-w-md overflow-hidden">
             <!-- Header -->
             <div class="bg-gray-50 px-6 py-8 text-center">
-                <img src="/api/placeholder/120/40" alt="Logo" class="mx-auto mb-2">
+                <img src="{{ asset('assets/images/logo.png') }}" alt="Logo" class="mx-auto mb-2 w-24">
                 <h2 class="text-2xl font-bold text-gray-800">Selamat Datang Kembali</h2>
                 <p class="text-gray-600 mt-1">Silahkan masuk ke akun Anda</p>
             </div>
